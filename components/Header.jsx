@@ -21,10 +21,12 @@ const Header = () => {
                             <FaRegHeart size={25} />
                             <span className="absolute -top-3 left-5 text-xs font-semibold text-white bg-red-300 px-1 rounded-full ">2</span>
                         </div>
-                        <div className="cursor-pointer relative">
-                            <FaCartShopping size={26} />
-                            <span className="absolute -top-3 left-5 text-xs font-semibold text-white bg-red-300 px-1 rounded-full ">5</span>
-                        </div>
+                        <Link href={'/cart'}>
+                            <div className="cursor-pointer relative">
+                                <FaCartShopping size={26} />
+                                <span className="absolute -top-3 left-5 text-xs font-semibold text-white bg-red-300 px-1 rounded-full ">5</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

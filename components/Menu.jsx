@@ -27,9 +27,9 @@ const Menu = () => {
                     <li className='text-base font-semibold  hover:text-gray-400 uppercase'>About</li>
                     <li className={`relative text-base font-semibold  hover:text-gray-400 uppercase order-last md:order-none`} onMouseEnter={() => setOpen(true)}>Categories
                         <ul onMouseLeave={() => setOpen(false)} className={`py-2 bg-gray-100 shadow-md w-52 absolute top-7 md:top-11 -z-50  ${open ? 'block' : 'hidden'}`} >
-                            <li className='px-2 py-1 h-7 text-sm font-normal hover:bg-gray-200 text-black capitalize'>Product 1 </li>
-                            <li className='px-2 py-1 h-7 text-sm font-normal hover:bg-gray-200 text-black capitalize '>Product 2 </li>
-                            <li className='px-2 py-1 h-7 text-sm font-normal hover:bg-gray-200 text-black capitalize '>Product 3  </li>
+                            <li className='px-2 py-1 h-7 text-sm font-medium hover:bg-gray-200 text-black capitalize'>Product 1 </li>
+                            <li className='px-2 py-1 h-7 text-sm font-medium hover:bg-gray-200 text-black capitalize'>Product 2 </li>
+                            <li className='px-2 py-1 h-7 text-sm font-medium hover:bg-gray-200 text-black capitalize'>Product 3 </li>
 
                         </ul>
                     </li>

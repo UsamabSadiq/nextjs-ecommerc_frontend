@@ -47,54 +47,21 @@ const ProductDetailsMultiBottomSlider = () => {
 
     };
 
+    const sliderCount = ['1', '2', '3', '4', '5']
     return (
         <>
             <Slider {...settings} >
-                <div className=''>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
-                <div>
-                    <ProductCard height={'h-fit'} width={'lg:w-[75%]'} />
-                </div>
+                {
+                    sliderCount.map(item => {
+                        return (
+                            <div key={item}>
+                                <ProductCard height={'h-fit'} width={'lg:w-[80%]'} hidden={'hidden'} />
+                            </div>
+                        )
+                    })
+                }
+
+
             </Slider>
         </>
     )
