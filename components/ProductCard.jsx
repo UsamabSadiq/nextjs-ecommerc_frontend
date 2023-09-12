@@ -2,11 +2,11 @@ import React from 'react'
 import product from '../public/assets/product-1.webp'
 import Image from "next/image";
 import Link from 'next/link';
-const ProductCard = () => {
+const ProductCard = ({ height, width }) => {
     return (
         <>
             <Link href={'/product/1'}>
-                <div className="card1 hover:scale-105 overflow-hidden duration-300 border-2 w-fit cursor-pointer">
+                <div className={`card1 hover:scale-105 overflow-hidden duration-300 border-2 w-fit cursor-pointer ${height} ${width}`}>
                     <div className="card-content">
                         <Image src={product} alt={"product image"} />
                         <div className="text px-2 truncate my-2">
