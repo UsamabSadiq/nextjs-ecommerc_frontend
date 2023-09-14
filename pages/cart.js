@@ -2,6 +2,7 @@ import React from 'react'
 import CartProduct from '@/components/CartProduct'
 // import emptyCart from '../public/assets/empty-cart.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const cart = () => {
     return (
@@ -40,10 +41,15 @@ const cart = () => {
             </div>
 
             {/* empty cart starts */}
-            <div className='empty_main flex flex-col items-center'>
+            <div className='empty_main w-1/2 mx-auto flex flex-col items-center'>
                 <Image src='/assets/empty-cart.jpg' width={500} height={400} />
 
                 <p className='text-red-600 text-xl font-bold capitalize mt-1'>Cart is empty..!!</p>
+                <Link href={'/'}>
+
+                    <button className='my-3 px-10 cursor-pointer rounded-full py-2 capitalize bg-black text-lg text-white hover:text-black hover:bg-white hover:scale-95 duration-300 border border-black '>Continue Shopping</button>
+                </Link>
+
 
             </div>
 

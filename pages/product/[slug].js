@@ -75,7 +75,7 @@ const ProductDetails = () => {
                                 {
                                     guideNum.map((num, ind) => {
                                         return (
-                                            <button key={num} onClick={(e) => { setSizeSelection(guideNum[ind].toString()) }} className='py-2 rounded-lg border-2 text-center font-semibold cursor-pointer hover:bg-gray-200 hover:text-slate-500 duration-300'>UK {num}</button>
+                                            <button key={num} onClick={() => { setSizeSelection(guideNum[ind].toString()) }} className='py-2 rounded-lg border-2 text-center font-semibold cursor-pointer hover:bg-gray-200 hover:text-slate-500 duration-300'>UK {num}</button>
                                         )
                                     })
                                 }

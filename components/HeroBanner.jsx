@@ -49,6 +49,18 @@ const HeroBanner = () => {
         // nextArrow: <SampleNextArrow />,
         // prevArrow: <SamplePrevArrow />
     };
+
+    // const PrevArrow = (props) => {
+    //     const { onClick } = props;
+    //     return (
+    //       <button
+    //         onClick={onClick}
+    //         className="!absolute !top-[370px] lg:!top-[150px] !left-4 lg:!-left-16 rotate-180 h-10 w-10 hover:border-[1px] hover:border-white pl-2 rounded-full"
+    //       >
+    //         <Icon otherclasses="h-10 !hover:fill-black" icon={arrowicon} />
+    //       </button>
+    //     );
+    //   };
     return (
         <>
 
